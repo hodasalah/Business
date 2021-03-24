@@ -1,0 +1,779 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+    font-size: 10px;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+.about {
+    padding: 40px 0;
+}
+.about img {
+    display: block;
+    margin: auto;
+}
+.about i {
+    color: $light-blue;
+    font-size: 1.7em;
+    line-height: 0.75em;
+    vertical-align: -38%;
+}
+.about .row > * {
+    margin-bottom: 4rem;
+}
+.about .info {
+    max-width: 100%;
+    @media screen and (max-width: 991px) {
+        max-width: 500px;
+        margin: auto;
+        text-align: center;
+    }
+}
+.about h5 {
+    color: $dark-blue;
+}
+/* features */
+.features h4 {
+    color: $dark-blue;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.features i {
+    background-color: $light-blue;
+    border-radius: 50%;
+    color: $white-color;
+    padding: 25px;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.feature {
+    padding: 2rem;
+    transition: all 0.55s ease-in-out;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: auto;
+    &:hover {
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+/* divider section */
+.divider {
+    margin: 70px 0;
+    background-color: $dark-blue;
+    padding: 40px 0;
+    text-transform: capitalize;
+    & > * > * {
+        align-items: center;
+    }
+    & p {
+        margin-bottom: 0 !important;
+        @media screen and (max-width: 991px) {
+            margin-bottom: 30px !important;
+        }
+    }
+    & .sec-btn:hover {
+        color: $white-color;
+    }
+}
+/**** services ****/
+.services {
+    margin-bottom: 7.5rem;
+}
+.services h2 {
+    margin-bottom: 40px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    font-size: 3rem;
+}
+.services h5 {
+    margin-top: 40px;
+    color: $dark-blue;
+    font-size: 2rem;
+    margin-bottom: 7rem;
+}
+.services p {
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+.services .image {
+    position: relative;
+    max-width: 40.5rem;
+    margin: auto;
+    & img {
+        display: block;
+        width: 100%;
+        height: 300px;
+    }
+    & .hoverlay {
+        position: absolute;
+        bottom: 100%;
+        right: 0;
+        left: 0;
+        height: 0;
+        width: 100%;
+        transition: 0.5s ease;
+        overflow: hidden;
+        background-color: $light-blue;
+    }
+    &:hover .hoverlay {
+        bottom: 0;
+        height: 100%;
+    }
+    & span {
+        font-family: "Oswald", sans-serif;
+        letter-spacing: 1px;
+        color: $white-color;
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2rem;
+        cursor: pointer;
+    }
+}
+
+/*** pricing ****/
+.pricing {
+    background-color: $white-color;
+    padding: 50px 0;
+    & h2 {
+        margin-bottom: 40px;
+        text-transform: capitalize;
+        letter-spacing: 4px;
+        font-weight: bold;
+    }
+}
+
+.pricing .card {
+    max-width: 40.5rem;
+    margin: auto;
+    &:hover {
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: all 0.55s ease-in-out;
+    }
+}
+
+.pricing .topcard {
+    margin-bottom: 30px;
+    padding: 50px 0 70px 0;
+    background: linear-gradient(to right bottom, $light-blue, $light-green);
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    & h4 {
+        margin: 0;
+        color: $white-color;
+        font-size: 2.4rem;
+    }
+}
+
+.pricing .card-body {
+    padding-top: 0;
+}
+.pricing .price {
+    font-weight: 600;
+    font-size: 3.6rem;
+    margin-bottom: 30px;
+    color: $dark-blue;
+    font-family: "Work Sans", sans-serif;
+    & span {
+        font-family: "Work Sans", sans-serif;
+        font-size: 25px;
+        vertical-align: top;
+        color: $light-blue;
+    }
+}
+
+.pricing .card-text {
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 30px 0;
+    letter-spacing: 1px;
+}
+.pricing .card .btn {
+    margin: 10px 0 20px 0;
+}
+
+/*** end pricing ****/
+
+/** testimonials **/
+.testimonials {
+    position: relative;
+    background: linear-gradient(
+            to right bottom,
+            rgba($dark-blue, 0.8),
+            rgba($dark-blue, 0.5)
+        ),
+        url("../image/testim.jpg") center center no-repeat;
+
+    background-size: cover;
+    color: $white-color;
+    padding: 50px 0;
+}
+.testimonials h2 {
+    font-size: 3rem;
+    color: transparent;
+}
+.testimonials .info h5 {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: $white-color;
+    font-size: 1.8rem;
+}
+.testimonials h2 small,
+.testimonials .info h5 small {
+    padding-top: 5px;
+    display: block;
+    text-transform: capitalize;
+    color: $white-color;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    font-family: "Oswald", sans-serif;
+    padding-bottom: 5px;
+}
+
+.testimonials .feedback {
+    margin-bottom: 50px;
+    color: $white-color;
+    margin-top: 40px;
+}
+.testimonials .feedback p {
+    font-size: 1.6rem;
+    line-height: 2;
+    font-weight: normal;
+    color: $white-color;
+    width: 80%;
+    margin: auto;
+}
+.testimonials .feedback p > i,
+.testimonials .feedback p > span {
+    color: $secondary-color;
+    font-weight: bold;
+}
+.testimonials i.before {
+    font-size: 1.7rem;
+    color: $secondary-color;
+    margin-right: 25px;
+    display: inline-block;
+}
+.testimonials i.after {
+    font-size: 1.7rem;
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.testimonials .user {
+    margin-bottom: 60px;
+}
+.testimonials .info {
+    text-align: left;
+}
+
+.testimonials .avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+    & > img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/** end testimonials **/
+.latest-news {
+    margin-top: 60px;
+}
+.latest-news .top-news {
+    margin-bottom: 30px;
+}
+.latest-news h2 {
+    font-size: 3rem;
+}
+.latest-news h2 small {
+    padding-top: 5px;
+    display: block;
+    color: $light-blue;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.latest-news ul.nav-pills {
+    margin-bottom: 20px;
+}
+.latest-news .nav-pills .nav-link {
+    border-radius: 0;
+    background: $white-color;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+    color: $dark-blue;
+    letter-spacing: 3px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.latest-news .nav-pills .nav-link.active {
+    background: $light-blue;
+    color: $white-color;
+}
+
+.latest-news.tab-content > .tab-pane {
+    display: none;
+}
+.latest-news .fade {
+    opacity: 0;
+    transition: opacity 0.15s linear;
+}
+.bg-gray {
+    background-color: $white-color;
+    border: 1px solid $light-blue;
+}
+.latest-news .news-block .news-block-inner {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 30px;
+    position: relative;
+    & h4 {
+        font-size: 1.9rem;
+    }
+}
+.latest-news .news-block .bg-image {
+    background-size: cover !important;
+    color: #fff;
+    z-index: 1;
+    padding: 20px;
+}
+.latest-news .news-block .bg-image::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(34, 34, 34, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.latest-news .bg-image hr {
+    background-color: #fff;
+}
+.latest-news .news-block-inner small {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+    color: #333;
+}
+.latest-news .news-block-inner small span {
+    color: $light-blue;
+    font-weight: bold;
+}
+.latest-news .bg-image small {
+    font-weight: lighter;
+    font-size: 12px;
+    line-height: 2;
+}
+
+.latest-news p {
+    color: #999;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 1.4;
+    width: 100%;
+    margin: 20px 0 30px;
+}
+.latest-news .news-block .bg-image small {
+    color: $secondary-color;
+}
+.latest-news .news-block .bg-image p {
+    color: $white-color;
+    font-weight: lighter;
+}
+.latest-news .top-news {
+    @media screen and (max-width: 770px) {
+        text-align: center;
+    }
+}
+.btn-col {
+    text-align: right;
+    @media screen and (max-width: 770px) {
+        text-align: center;
+    }
+}
+.latest-news .btn {
+    background: none;
+
+    color: $dark-blue;
+
+    border: 2px solid $light-blue;
+
+    margin-bottom: 10px;
+}
+.latest-news .btn:hover {
+    background-color: $light-blue;
+    color: $white-color;
+}
+.latest-news .news-block .bg-image .btn {
+    color: $white-color;
+    border-color: $white-color;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+.latest-news .news-block .bg-image .btn:hover {
+    border-color: $light-blue;
+}
+
+.tab-content > .active {
+    display: block;
+}
+.latest-news .fade.show {
+    opacity: 1;
+}
+/* end latest news */
+/* start blog section */
+
+.blog {
+    border: none;
+    padding: 40px 0;
+    margin: 70px 0 0 0;
+    background: $white-color;
+}
+.blog-post {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.blog-post .image img {
+    width: 100%;
+}
+.blog-post .image .boverlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: $light-blue;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 0.5s ease;
+}
+
+.blog-post .image:hover .boverlay {
+    width: 100%;
+    left: 0;
+}
+.blog h2 {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: transparent;
+    margin-bottom: 40px;
+    font-size: 3rem;
+}
+.blog h2 small {
+    padding: 10px 0;
+    display: block;
+    color: $light-blue;
+    font-weight: 400;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+.blog .btn {
+    letter-spacing: 2px;
+    background: none;
+
+    color: $white-color;
+
+    border: 2px solid $white-color;
+
+    transition: color 0.8s ease-in-out, background-color 0.8s ease-in-out,
+        border-color 0.8s ease-in-out;
+
+    margin-bottom: 10px;
+}
+.blog .btn:hover {
+    background-color: $white-color;
+    color: $light-blue;
+}
+
+.blog-post .image {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+.blog-post .image img,
+.blog-post .author img {
+    height: 100% !important;
+}
+.blog-post .author {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid $light-blue;
+    margin-top: -35px;
+
+    margin-left: 30px;
+    box-shadow: 0 5px 5px 0 rgba(17, 33, 66, 0.18),
+        0 4px 4px 0 rgba(17, 33, 66, 0.15);
+}
+
+.blog-post .text {
+    background: $white-color;
+    padding: 20px;
+    padding-top: 55px;
+    margin-top: -35px;
+}
+.blog-post h4 {
+    text-transform: capitalize;
+    width: 95%;
+    font-size: 20px;
+    color: $light-blue;
+}
+.blog-post p {
+    color: $text-grey;
+    text-transform: capitalize;
+    width: 95%;
+    font-size: 14px;
+}
+.blog .post-meta {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* end blog section */
+/* jumbotroon  section */
+.jumbotron {
+    color: $white-color;
+    background: linear-gradient(rgba($dark-blue, 0.8), rgba($dark-blue, 0.8)),
+        url("../image/divid-lg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 5rem 0;
+    @media screen and (max-width: 900px) {
+        background: linear-gradient(
+                rgba($dark-blue, 0.8),
+                rgba($dark-blue, 0.8)
+            ),
+            url("../image/divid.jpg");
+    }
+}
+
+.jumbotron h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 4rem;
+    color: $white-color;
+}
+.jumbotron p {
+    color: $white-color;
+    margin-bottom: 3rem;
+}
+
+.jumbo-links .btn {
+    margin-bottom: 1rem;
+    &:hover {
+        background-color: $white-color;
+        color: $light-blue;
+        border-color: $white-color;
+    }
+}
+
+.jumbo-links .btn_light {
+    background-color: transparent;
+    border: 2px solid $light-blue;
+
+    &:hover {
+        background-color: $white-color;
+        color: $light-blue;
+    }
+}
+/* contact */
+.contact-us {
+    margin: 80px 0 50px 0;
+    background-color: $white-color;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-us .p {
+    margin: 20px 0 50px 0;
+}
+.card-title h3 {
+    font-family: "Oswald", sans-serif !important;
+    color: $white-color;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    & > span {
+        color: $secondary-color;
+        font-size: 1.5rem;
+    }
+}
+.contact-us .card {
+    max-width: 500px;
+    margin: 0 auto;
+    height: 578px !important;
+    &.form {
+        background-image: linear-gradient(
+                to bottom,
+                rgba(62, 69, 81, 0.7),
+                rgba(62, 69, 81, 0.7)
+            ),
+            url("../image/contact.jpg");
+    }
+    &.map {
+        background-image: url("../image/map.png");
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+
+    background-size: cover;
+    padding: 5rem 2rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: all 0.4s ease;
+    &:hover {
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    }
+}
+input,
+textarea {
+    border: 0;
+    padding: 2rem 0.5rem;
+    background-color: transparent;
+    border-bottom: 2px solid $secondary-color;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    width: 100%;
+    transition: all 0.5s ease;
+    color: $white-color;
+}
+.input-wrap {
+    position: relative;
+    transition: all 0.5s ease;
+    & label {
+        position: absolute;
+        top: 0;
+        left: 0.5rem;
+        opacity: 0;
+        transform: translateY(100%);
+        transition: all 0.5s ease-in-out;
+        font-size: 1.2rem;
+        color: $secondary-color;
+    }
+}
+input:focus + label,
+textarea:focus + label {
+    transform: translateY(0);
+    opacity: 1;
+}
+input::placeholder,
+textarea::placeholder {
+    font-size: 1.2rem;
+    color: $white-color;
+}
+input:focus::placeholder,
+textarea:focus::placeholder {
+    opacity: 0;
+}
+input:focus,
+textarea:focus,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill {
+    outline: none !important;
+    outline-offset: none;
+    outline-color: transparent;
+    box-shadow: none;
+    background-color: rgba($white-color, 0.2) !important;
+}
+input[type="checkbox"] {
+    opacity: 0;
+}
+input[type="checkbox"] + label {
+    position: relative;
+    color: $white-color;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    & > a {
+        color: $secondary-color;
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        top: 13px;
+        left: 0;
+        background-color: transparent;
+        width: 18px;
+        height: 18px;
+        border: 2px solid #eee;
+        border-radius: 1px;
+        transition: all 0.5s ease;
+    }
+}
+input[type="checkbox"]:checked + label {
+    &::before {
+        width: 12px;
+        top: 9px;
+        height: 18px;
+        border-top: 2px solid transparent;
+        border-left: 2px solid transparent;
+        border-right: 2px solid $secondary-color;
+        border-bottom: 2px solid $secondary-color;
+        transform: rotate(40deg);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        transform-origin: 100% 100%;
+    }
+}
+
+form .sec-btn {
+    margin-top: 3rem;
+    &:hover {
+        background-color: $white-color;
+        border-color: $white-color;
+        color: $light-blue;
+    }
+}
+
+/* contact */
+
+/* info address */
+.address i {
+    color: $light-blue;
+    font-size: 2.5rem;
+}
+.address li {
+    color: $text-grey;
+    font-size: 1.6rem;
+}
+.address .link-default {
+    color: $dark-blue;
+    letter-spacing: 1px;
+    margin-left: 0;
+    padding-left: 0;
+    &:hover {
+        color: $light-blue;
+    }
+}
+.link-default .address .col:first-child,
+.address .col:last-child {
+    border-left: 1px solid $light-blue;
+    border-right: 1px solid $light-blue;
+}

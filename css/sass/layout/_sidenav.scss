@@ -1,0 +1,105 @@
+#sidebar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: -100%;
+    height: 100vh;
+    z-index: 999;
+    background: $dark-blue;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    & form input {
+        padding: 10px;
+    }
+}
+
+#sidebar.active {
+    left: 0;
+}
+#dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: $dark-blue;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    font-size: 1.8rem;
+    color: $secondary-color;
+    z-index: 1;
+}
+#dismiss:hover {
+    background: $secondary-color;
+    color: $dark-blue;
+}
+
+#sidebar .social-top {
+    font-size: 2rem;
+    padding-left: 0;
+    padding: 20px 0;
+}
+#sidebar .social-top li {
+    display: inline-block;
+    padding-left: 3rem;
+    & a:hover {
+        color: $secondary-color;
+    }
+}
+
+#sidebar ul li {
+    padding: 1rem 0;
+    & a {
+        font-size: 1.8rem;
+        display: block;
+        color: $white-color;
+    }
+    &.active > a,
+    a[aria-expanded="true"] {
+        color: $white-color;
+        background: $light-blue !important;
+    }
+}
+
+#sidebar .collapsible li a {
+    padding-left: 1.5rem;
+    text-transform: capitalize;
+    & i {
+        padding-right: 1.5rem;
+    }
+}
+.dropdown-menu {
+    width: 100%;
+}
+#sidebar .dropdown-menu a {
+    color: #001d31;
+    padding: 1rem 2rem;
+    transition: all 0.5s ease-in-out;
+    & i {
+        color: $dark-blue;
+    }
+    &:hover,
+    &:focus {
+        background-color: $light-blue;
+        color: $white-color;
+        padding-left: 20px;
+    }
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}

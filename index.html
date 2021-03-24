@@ -1,0 +1,1684 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- google fonts [Oswald , Worksans , great vibes] -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald:wght@300;400;600&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,800;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Business</title>
+        <!-- css files -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/swiper.css" />
+        <link rel="stylesheet" href="css/all.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body onload="myFunction()">
+        <!-- LOader -->
+        <section class="loader-wrap" id="loader">
+            <div class="loader">
+                <div class="loader-outter"></div>
+
+                <div class="loader-inner"></div>
+            </div>
+        </section>
+
+        <!-- Side NAV -->
+
+        <nav
+            id="sidebar"
+            style="
+                background-image: linear-gradient(
+                        to right bottom,
+                        rgba(0, 29, 49, 0.8),
+                        rgba(0, 29, 49, 0.5)
+                    ),
+                    url('image/sidebar1.jpg');
+                background-size: cover;
+            "
+        >
+            <!-- sidebar button-out -->
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+            <ul>
+                <!-- Logo -->
+                <li>
+                    <a class="navbar-brand" href="#"
+                        ><h6 class="my-0"><span>B</span>usiness</h6></a
+                    >
+                </li>
+                <!--/. Logo -->
+                <!--Social-->
+                <li>
+                    <ul class="social-top">
+                        <li>
+                            <a href="#"><i class="fab fa-facebook"> </i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-pinterest"> </i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-google-plus"> </i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"> </i></a>
+                        </li>
+                    </ul>
+                </li>
+                <!--/Social-->
+                <!--Search Form-->
+                <li>
+                    <form class="search-form" role="search">
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Search"
+                        />
+                    </form>
+                </li>
+                <!--/.Search Form-->
+                <!-- Side navigation links -->
+                <li>
+                    <ul class="collapsible collapsible-accordion">
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                                href="#"
+                                role="button"
+                                aria-expanded="false"
+                            >
+                                <i class="fas fa-check mr-2"></i>
+                                submit blog
+                            </a>
+                            <div
+                                class="dropdown-menu"
+                                aria-labelledby="navbarDropdown4"
+                            >
+                                <a class="dropdown-item" href="#"
+                                    ><i class="fas fa-chevron-right"></i>action
+                                </a>
+                                <a class="dropdown-item" href="#"
+                                    ><i class="fas fa-chevron-right"></i
+                                    >action</a
+                                >
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"
+                                    ><i class="fas fa-chevron-right"></i
+                                    >another-action</a
+                                >
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                                href="#"
+                                role="button"
+                                aria-expanded="false"
+                            >
+                                <i class="fas fa-phone mr-2"></i>
+                                our telephones
+                            </a>
+                            <div
+                                class="dropdown-menu"
+                                aria-labelledby="navbarDropdown1"
+                            >
+                                <a class="dropdown-item" href="#"
+                                    ><i class="fas fa-chevron-right"></i
+                                    >012345679</a
+                                >
+                                <a class="dropdown-item" href="#"
+                                    ><i class="fas fa-chevron-right"></i
+                                    >96-0000-00000</a
+                                >
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"
+                                    ><i class="fas fa-chevron-right"></i
+                                    >9-6000-0000</a
+                                >
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                                href="#"
+                                role="button"
+                                aria-expanded="false"
+                            >
+                                <i class="fas fa-newspaper mr-2"></i>
+                                our newsletter
+                            </a>
+                            <div
+                                class="dropdown-menu"
+                                aria-labelledby="navbarDropdown2"
+                            >
+                                <a class="dropdown-item" href="#"
+                                    ><i class="fas fa-chevron-right"></i
+                                    >action</a
+                                >
+                                <a class="dropdown-item" href="#"
+                                    ><i class="fas fa-chevron-right"></i
+                                    >action</a
+                                >
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"
+                                    ><i class="fas fa-chevron-right"></i>another
+                                    action</a
+                                >
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                                href="#"
+                                role="button"
+                                aria-expanded="false"
+                            >
+                                <i class="fas fa-envelope mr-2"></i>
+                                left message
+                            </a>
+                            <div
+                                class="dropdown-menu"
+                                aria-labelledby="navbarDropdown3"
+                            >
+                                <a class="dropdown-item" href="#"
+                                    ><i class="fa fa-chevron-right"></i>our
+                                    terms</a
+                                >
+                                <a class="dropdown-item" href="#"
+                                    ><i class="fas fa-chevron-right"></i>write a
+                                    message</a
+                                >
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"
+                                    ><i class="fas fa-chevron-right"></i>FAQ</a
+                                >
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <!--/. Side navigation links -->
+            </ul>
+            <!--/. Sidebar navigation -->
+        </nav>
+        <!-- header -->
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+                    <a class="navbar-brand" href="#"
+                        ><h6 class="my-0"><span>B</span>usiness</h6>
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">about</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">gallery</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="hero-slider">
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide slide-img">
+                        <div class="swiper-pagination__fraction">
+                            <span class="swiper-pagination__fraction-index"
+                                >01</span
+                            >
+                            <span
+                                class="swiper-pagination__fraction-divider"
+                            ></span>
+                            <span class="swiper-pagination__fraction-count"
+                                >03</span
+                            >
+                        </div>
+                        <!-- caption -->
+                        <div class="swiper-slide-caption">
+                            <div class="container text-center mx-auto">
+                                <h1 class="title">
+                                    Providing<span> High-Quality</span> Business
+                                    Solutions
+                                </h1>
+                                <p class="caption">
+                                    We are one of the world’s leading business
+                                    consulting companies, which combines classic
+                                    management consulting with outstanding
+                                    technological expertise and innovations in
+                                    marketing and promotion.
+                                </p>
+                                <button class="btn aqua-gradient aqua-gradient">
+                                    learn more
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-img">
+                        <div class="swiper-pagination__fraction">
+                            <span class="swiper-pagination__fraction-index"
+                                >02</span
+                            >
+                            <span
+                                class="swiper-pagination__fraction-divider"
+                            ></span>
+                            <span class="swiper-pagination__fraction-count"
+                                >03</span
+                            >
+                        </div>
+                        <div class="swiper-slide-caption">
+                            <div class="container text-center mx-auto">
+                                <h1 class="title">
+                                    A Team of <span>Experts</span> Working for
+                                    You
+                                </h1>
+                                <p class="caption">
+                                    Generic is a synonym of professionalism
+                                    because of the experts we have gathered at
+                                    our company. Over the years we have helped
+                                    hundreds of businesses who were more than
+                                    just satisfied with our work.
+                                </p>
+                                <button class="btn aqua-gradient">
+                                    learn more
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-img">
+                        <div class="swiper-pagination__fraction">
+                            <span class="swiper-pagination__fraction-index"
+                                >03</span
+                            >
+                            <span
+                                class="swiper-pagination__fraction-divider"
+                            ></span>
+                            <span class="swiper-pagination__fraction-count"
+                                >03</span
+                            >
+                        </div>
+                        <div class="swiper-slide-caption">
+                            <div class="container text-center mx-auto">
+                                <h1 class="title">
+                                    <span>Professional Business</span> Approach
+                                    Since Day One
+                                </h1>
+                                <p class="caption">
+                                    Since our establishment in 1999, we have
+                                    been pursuing the goal of satisfying our
+                                    customers’ needs, be it small business
+                                    consulting or assistance to bigger companies
+                                    as well as international enterprises.
+                                </p>
+                                <button class="btn aqua-gradient">
+                                    learn more
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination__module">
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-pagination__divider"></div>
+                </div>
+            </div>
+        </section>
+        <!-- start about sec -->
+        <section class="about">
+            <div class="container">
+                <div class="row margin-b-5 text-center">
+                    <h2 class="sec-title">A Few Words About Us</h2>
+                    <p>
+                        COST Accountant was founded in 1995 and since that time
+                        has grown into the largest CPA firm in the area. We are
+                        an assertive firm providing our clients a full range of
+                        services.
+                    </p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-5">
+                        <img
+                            class="img-fluid wow slideInLeft"
+                            src="image/about-us.png"
+                            alt="Sample image"
+                        />
+                    </div>
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-6 text-left info">
+                        <div class="row margin-b-2">
+                            <div class="col-1">
+                                <i class="fas fa-share"></i>
+                            </div>
+                            <div class="col-xl-10 col-md-11 col-10">
+                                <h5>Safety</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit enim ad minima veniam, quis
+                                    nostrum exercitationem ullam. Reprehenderit
+                                    maiores aperiam assumenda deleniti hic.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row margin-b-2">
+                            <div class="col-1">
+                                <i class="fas fa-share"></i>
+                            </div>
+                            <div class="col-xl-10 col-md-11 col-10">
+                                <h5 class="mb-3">Technology</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit enim ad minima veniam, quis
+                                    nostrum exercitationem ullam. Reprehenderit
+                                    maiores aperiam assumenda deleniti hic.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row margin-b-5">
+                            <div class="col-1">
+                                <i class="fas fa-share"></i>
+                            </div>
+
+                            <div class="col-xl-10 col-md-11 col-10">
+                                <h5 class="mb-3">Finance</h5>
+                                <p class="mb-0">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit enim ad minima veniam, quis
+                                    nostrum exercitationem ullam. Reprehenderit
+                                    maiores aperiam assumenda deleniti hic.
+                                </p>
+                            </div>
+                        </div>
+                        <button class="btn sec-btn">learn more</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end about sec -->
+        <!-- Start features -->
+        <div class="features margin-t-5 text-center">
+            <div class="container">
+                <div class="row px-2">
+                    <div class="col-lg-4 col-md-6 col-sm-12 feature mb-4">
+                        <i class="fas fa-users"></i>
+                        <h4>Qualified Employees</h4>
+                        <p class="text-center">
+                            Our team consists of more than 20 qualified and
+                            experienced accountants, marketers, and managers.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 feature mb-4">
+                        <i class="fas fa-comment-dots"></i>
+                        <h4>Free Consultations</h4>
+                        <p class="text-center">
+                            Our team consists of more than 20 qualified and
+                            experienced accountants, marketers, and managers.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 feature">
+                        <i class="fas fa-check"></i>
+                        <h4>100% Guaranteed</h4>
+                        <p class="text-Center">
+                            Our team consists of more than 20 qualified and
+                            experienced accountants, marketers, and managers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end features -->
+        <!-- divider -->
+        <div class="divider">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-8 col-sm-12">
+                        <p class="mx-auto">
+                            Learn the Cost of your Accounting Solutions Right
+                            Now!
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-12">
+                        <button class="btn sec-btn">view all pricing</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end divider -->
+        <!-- services -->
+        <section class="services text-center">
+            <div class="container">
+                <h2 class="sec-title">Services</h2>
+                <p>
+                    grown As the most qualified accounting services provider, we
+                    offer an amazing variety of financial solutions designed to
+                    help you solve all bookkeeping issues, no matter big or
+                    small.Our team consists of more than 20 qualified and
+                    experienced accountants, marketers, and managers.
+                </p>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="image">
+                            <div class="hoverlay">
+                                <span>read more ..>></span>
+                            </div>
+                            <img src="image/ser-1.jpg" alt="manegment" />
+                        </div>
+                        <h5>Cash Management</h5>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="image">
+                            <div class="hoverlay">
+                                <span>read more ..>></span>
+                            </div>
+                            <img src="image/ser-2.jpg" alt="assistance" />
+                        </div>
+                        <h5>M&A Assistance</h5>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="image">
+                            <div class="hoverlay">
+                                <span>read more ..>></span>
+                            </div>
+                            <img src="image/ser-3.jpg" alt="payment" />
+                        </div>
+                        <h5>Payments</h5>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="image">
+                            <div class="hoverlay">
+                                <span>read more ..>></span>
+                            </div>
+                            <img src="image/ser-4.jpg" alt="expertice" />
+                        </div>
+                        <h5>Local Expertise</h5>
+                    </div>
+                </div>
+                <button class="btn sec-btn">view all services</button>
+            </div>
+        </section>
+        <!-- end services -->
+
+        <!-- pricing -->
+        <div class="pricing">
+            <div class="container text-center">
+                <h2 class="sec-title">pricing</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card mb-5">
+                            <div class="topcard">
+                                <h4 class="card-title maintitle">Basic</h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title price">
+                                    <span>$</span>49.00
+                                </p>
+                                <hr />
+                                <p class="card-text">
+                                    This package will suit you if you are a
+                                    private entrepreneur or a small business
+                                    owner looking for some advice in accounting.
+                                </p>
+                                <a href="#" class="btn sec-btn"
+                                    >Order Service</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card mb-5">
+                            <div class="topcard">
+                                <h4 class="card-title maintitle">Standard</h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title price">
+                                    <span>$</span>67.00
+                                </p>
+                                <hr />
+                                <p class="card-text">
+                                    Whether you own a small company or a
+                                    mid-sized corporation, our Standard package
+                                    can offer you all necessary accounting
+                                    services.
+                                </p>
+                                <a href="#" class="btn sec-btn"
+                                    >Order Service</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="topcard">
+                                <h4 class="card-title maintitle">Gold</h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title price">
+                                    <span>$</span>86.00
+                                </p>
+                                <hr />
+                                <p class="card-text">
+                                    Owners of international enterprises cannot
+                                    go for anything less than full accounting
+                                    support and that’s what we offer here.
+                                </p>
+                                <a href="#" class="btn sec-btn"
+                                    >Order Service</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end pricing -->
+
+        <!-- start testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="row text-center">
+                    <h2 class="sec-title">
+                        <small>our clients' feedback</small>
+                        <span style="color: #1ff1f5">2000+ </span>Happy Clients
+                    </h2>
+                </div>
+
+                <div class="row">
+                    <div
+                        id="carousel-test"
+                        class="carousel slide"
+                        data-bs-ride="carousel"
+                    >
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carousel-test"
+                            data-bs-slide="prev"
+                        >
+                            <span
+                                class="carousel-control-prev-icon"
+                                aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carousel-test"
+                            data-bs-slide="next"
+                        >
+                            <span
+                                class="carousel-control-next-icon"
+                                aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        <div class="carousel-inner">
+                            <!-- item 1-->
+                            <div class="carousel-item active">
+                                <div class="feedback">
+                                    <p class="text-center">
+                                        <i class="fas fa-quote-left before"></i>
+                                        “We have been working with
+                                        <span>HODA SALAH COMPANY</span> for
+                                        three years. Their team is very
+                                        professional, and always gives clear
+                                        advice and guidance in a prompt and
+                                        efficient manner.We are pleased with the
+                                        result and we definitely highly
+                                        recommend them.”
+                                        <i class="fas fa-quote-right after"></i>
+                                    </p>
+                                </div>
+                                <div class="user d-flex justify-content-center">
+                                    <div class="avatar">
+                                        <img src="image/1.jpg" alt="john" />
+                                    </div>
+                                    <div class="info">
+                                        <h5>
+                                            john met<small
+                                                >Private Entrepreneur</small
+                                            >
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item 2 -->
+                            <div class="carousel-item">
+                                <div class="feedback">
+                                    <p class="text-center">
+                                        <i class="fas fa-quote-left before"></i>
+                                        “We have been working with
+                                        <span>HODA SALAH COMPANY</span> for
+                                        three years. Their team is very
+                                        professional, and always gives clear
+                                        advice and guidance in a prompt and
+                                        efficient manner.We are pleased with the
+                                        result and we definitely highly
+                                        recommend them.”
+                                        <i class="fas fa-quote-right after"></i>
+                                    </p>
+                                </div>
+                                <div class="user d-flex justify-content-center">
+                                    <div class="avatar">
+                                        <img src="image/2.jpg" alt="albert" />
+                                    </div>
+                                    <div class="info">
+                                        <h5>
+                                            albert webb<small
+                                                >Regional Manager</small
+                                            >
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item 3 -->
+                            <div class="carousel-item">
+                                <div class="feedback">
+                                    <p class="text-center">
+                                        <i class="fas fa-quote-left before"></i>
+                                        “We have been working with
+                                        <span>HODA SALAH COMPANY</span> for
+                                        three years. Their team is very
+                                        professional, and always gives clear
+                                        advice and guidance in a prompt and
+                                        efficient manner.We are pleased with the
+                                        result and we definitely highly
+                                        recommend them.”
+                                        <i class="fas fa-quote-right after"></i>
+                                    </p>
+                                </div>
+                                <div class="user d-flex justify-content-center">
+                                    <div class="avatar">
+                                        <img
+                                            src="image/3.jpg"
+                                            alt="Kelly McMillan"
+                                        />
+                                    </div>
+                                    <div class="info">
+                                        <h5>
+                                            Kelly McMillan<small
+                                                >CEO at Majestic</small
+                                            >
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item 4 -->
+                            <div class="carousel-item">
+                                <div class="feedback">
+                                    <p class="text-center">
+                                        <i class="fas fa-quote-left before"></i>
+                                        “We have been working with
+                                        <span>HODA SALAH COMPANY</span> for
+                                        three years. Their team is very
+                                        professional, and always gives clear
+                                        advice and guidance in a prompt and
+                                        efficient manner.We are pleased with the
+                                        result and we definitely highly
+                                        recommend them.”
+                                        <i class="fas fa-quote-right after"></i>
+                                    </p>
+                                </div>
+                                <div class="user d-flex justify-content-center">
+                                    <div class="avatar">
+                                        <img src="image/4.jpg" alt="mark" />
+                                    </div>
+                                    <div class="info">
+                                        <h5>
+                                            mark yoten<small
+                                                >accountant manager</small
+                                            >
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item 5 -->
+                            <div class="carousel-item">
+                                <div class="feedback">
+                                    <p class="text-center">
+                                        <i class="fas fa-quote-left before"></i>
+                                        “We have been working with
+                                        <span>HODA SALAH COMPANY</span> for
+                                        three years. Their team is very
+                                        professional, and always gives clear
+                                        advice and guidance in a prompt and
+                                        efficient manner.We are pleased with the
+                                        result and we definitely highly
+                                        recommend them.”
+                                        <i class="fas fa-quote-right after"></i>
+                                    </p>
+                                </div>
+                                <div class="user d-flex justify-content-center">
+                                    <div class="avatar">
+                                        <img
+                                            src="image/5.jpg"
+                                            alt="zeya McMillan"
+                                        />
+                                    </div>
+                                    <div class="info">
+                                        <h5>
+                                            zeya McMillan<small
+                                                >CEO at Majestic</small
+                                            >
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item 6 -->
+                            <div class="carousel-item">
+                                <div class="feedback">
+                                    <p class="text-center">
+                                        <i class="fas fa-quote-left before"></i>
+                                        “We have been working with
+                                        <span>HODA SALAH COMPANY</span> for
+                                        three years. Their team is very
+                                        professional, and always gives clear
+                                        advice and guidance in a prompt and
+                                        efficient manner.We are pleased with the
+                                        result and we definitely highly
+                                        recommend them.”
+                                        <i class="fas fa-quote-right after"></i>
+                                    </p>
+                                </div>
+                                <div class="user d-flex justify-content-center">
+                                    <div class="avatar">
+                                        <img src="image/6.jpg" alt="elisa" />
+                                    </div>
+                                    <div class="info">
+                                        <h5>
+                                            elisa<small
+                                                >accountant manager</small
+                                            >
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end testimonials -->
+
+        <!-- start latest-news -->
+        <section class="latest-news">
+            <div class="container">
+                <div class="row top-news">
+                    <div class="text-left col-md-6">
+                        <h2 class="sec-title">
+                            Latest News <small>From Our Blog</small>
+                        </h2>
+                    </div>
+                    <div class="col-md-6 btn-col">
+                        <button class="btn sec-btn">view all articles</button>
+                    </div>
+                </div>
+                <ul
+                    id="pills-tab"
+                    role="tablist"
+                    class="nav nav-pills nav-justified"
+                >
+                    <li class="nav-item">
+                        <a
+                            id="Management-tab"
+                            aria-controls="pills-Management"
+                            class="nav-link active show"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-Management"
+                            role="tab"
+                            aria-selected="true"
+                            >Management</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            id="Ourteam-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-Ourteam"
+                            role="tab"
+                            aria-controls="pills-Ourteam"
+                            aria-selected="false"
+                            class="nav-link"
+                            >OUR TEAM</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            id="Finances-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-Finances"
+                            role="tab"
+                            aria-controls="pills-Finances"
+                            aria-selected="false"
+                            class="nav-link"
+                            >Finances</a
+                        >
+                    </li>
+                </ul>
+                <div id="pills-tabContent" class="tab-content">
+                    <div
+                        id="pills-Management"
+                        role="tabpanel"
+                        aria-labelledby="Management-tab"
+                        class="tab-pane fade active show"
+                    >
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="news-block">
+                                    <div class="news-block-inner bg-gray">
+                                        <h4>Managing Your Finances</h4>
+                                        <hr />
+                                        <small class="text-transform"
+                                            >by Theresa Barnes | jul 21, 2018 at
+                                            12:05 pm | <span>News</span>
+                                        </small>
+
+                                        <p>
+                                            Personal financial management is a
+                                            subject that is not taught in many
+                                            schools, but is something that
+                                            nearly everyone has to deal with in
+                                            their lives later on. Here are some
+                                            statistics...
+                                        </p>
+                                        <a href="#" class="btn sec-btn"
+                                            >Read more</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="news-block">
+                                    <div
+                                        style="
+                                            background: url(image/Management.jpg);
+                                        "
+                                        class="news-block-inner bg-image"
+                                    >
+                                        <h4>Managing Your Finances</h4>
+                                        <hr />
+                                        <small class="text-transform"
+                                            >by Theresa Barnes | jul 21, 2018 at
+                                            12:05 pm | <span>News</span></small
+                                        >
+
+                                        <p>
+                                            Personal financial management is a
+                                            subject that is not taught in many
+                                            schools, but is something that
+                                            nearly everyone has to deal with in
+                                            their lives later on. Here are some
+                                            statistics...
+                                        </p>
+                                        <a href="#" class="btn sec-btn"
+                                            >Read more</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="news-block">
+                                    <div class="news-block-inner bg-gray">
+                                        <h4>Managing Your Finances</h4>
+                                        <hr />
+                                        <small class="text-transform"
+                                            >by Theresa Barnes | jul 21, 2018 at
+                                            12:05 pm | <span>News</span></small
+                                        >
+
+                                        <p>
+                                            Personal financial management is a
+                                            subject that is not taught in many
+                                            schools, but is something that
+                                            nearly everyone has to deal with in
+                                            their lives later on. Here are some
+                                            statistics...
+                                        </p>
+                                        <a href="#" class="btn sec-btn"
+                                            >Read more</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        id="pills-Ourteam"
+                        role="tabpanel"
+                        aria-labelledby="Ourteam-tab"
+                        class="tab-pane fade"
+                    >
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="news-block">
+                                    <div
+                                        style="
+                                            background: url(image/ourteam.jpeg);
+                                        "
+                                        class="news-block-inner bg-image"
+                                    >
+                                        <h4>Team Effectiveness Assessment</h4>
+                                        <hr />
+                                        <small class="text-transform"
+                                            >by Theresa Barnes | jul 21, 2018 at
+                                            12:05 pm |
+                                            <span>Advertising</span></small
+                                        >
+                                        <p>
+                                            Nowadays it is almost impossible to
+                                            avoid being a member of team. If
+                                            you're not on an official team at
+                                            work, chances are you function
+                                            within one in one way or another...
+                                        </p>
+                                        <a href="#" class="btn sec-btn"
+                                            >Read more</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="news-block">
+                                    <div class="news-block-inner bg-gray">
+                                        <h4>Team Effectiveness Assessment</h4>
+                                        <hr />
+                                        <small class="text-transform"
+                                            >by Theresa Barnes | jul 21, 2018 at
+                                            12:05 pm |
+                                            <span>Advertising</span></small
+                                        >
+                                        <p>
+                                            Nowadays it is almost impossible to
+                                            avoid being a member of team. If
+                                            you're not on an official team at
+                                            work, chances are you function
+                                            within one in one way or another...
+                                        </p>
+                                        <a href="#" class="btn sec-btn"
+                                            >Read more</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="news-block">
+                                    <div class="news-block-inner bg-gray">
+                                        <h4>Team Effectiveness Assessment</h4>
+                                        <hr />
+                                        <small class="text-transform"
+                                            >by Theresa Barnes | jul 21, 2018 at
+                                            12:05 pm |
+                                            <span>Advertising</span></small
+                                        >
+                                        <p>
+                                            Nowadays it is almost impossible to
+                                            avoid being a member of team. If
+                                            you're not on an official team at
+                                            work, chances are you function
+                                            within one in one way or another...
+                                        </p>
+                                        <a href="#" class="btn sec-btn"
+                                            >Read more</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        id="pills-Finances"
+                        role="tabpanel"
+                        aria-labelledby="Finances-tab"
+                        class="tab-pane fade"
+                    >
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="news-block">
+                                    <div class="news-block-inner bg-gray">
+                                        <h4>
+                                            5 Reasons Why You Need an Accountant
+                                        </h4>
+                                        <hr />
+                                        <small class="text-transform"
+                                            >by Theresa Barnes | jul 21, 2018 at
+                                            12:05 pm |
+                                            <span>Advertising</span></small
+                                        >
+                                        <p>
+                                            As your business — and revenue —
+                                            grow, managing your financials may
+                                            become a task you don’t have the
+                                            time or knowledge to manage.
+                                            Specifically, when it comes avoiding
+                                            legal and...
+                                        </p>
+                                        <a href="#" class="btn sec-btn"
+                                            >Read more</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="news-block">
+                                    <div class="news-block-inner bg-gray">
+                                        <h4>
+                                            5 Reasons Why You Need an Accountant
+                                        </h4>
+                                        <hr />
+                                        <small class="text-transform"
+                                            >by Theresa Barnes | jul 21, 2018 at
+                                            12:05 pm |
+                                            <span>Advertising</span></small
+                                        >
+                                        <p>
+                                            As your business — and revenue —
+                                            grow, managing your financials may
+                                            become a task you don’t have the
+                                            time or knowledge to manage.
+                                            Specifically, when it comes avoiding
+                                            legal and...
+                                        </p>
+                                        <a href="#" class="btn sec-btn"
+                                            >Read more</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="news-block">
+                                    <div
+                                        style="
+                                            background: url(image/finance.jpg);
+                                        "
+                                        class="news-block-inner bg-image"
+                                    >
+                                        <h4>
+                                            5 Reasons Why You Need an Accountant
+                                        </h4>
+                                        <hr />
+                                        <small class="text-transform"
+                                            >by Theresa Barnes | jul 21, 2018 at
+                                            12:05 pm |
+                                            <span>Advertising</span></small
+                                        >
+                                        <p>
+                                            As your business — and revenue —
+                                            grow, managing your financials may
+                                            become a task you don’t have the
+                                            time or knowledge to manage.
+                                            Specifically, when it comes avoiding
+                                            legal and...
+                                        </p>
+                                        <a href="#" class="btn sec-btn"
+                                            >Read more</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end latest-news -->
+
+        <!-- our latest blog -->
+        <section class="blog bg-gray wow slideInRight">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="sec-title">
+                        <small>From the blog</small>Recent Posts
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="blog-post">
+                            <div class="image">
+                                <img
+                                    src="image/1-b.jpg"
+                                    alt="Projects aim to help those experiencing mental"
+                                />
+                                <!-- big img -->
+                                <div
+                                    class="boverlay d-flex align-items-center justify-content-center"
+                                >
+                                    <a href="blog-post.html" class="btn sec-btn"
+                                        >Read more</a
+                                    >
+                                </div>
+                                <!-- overlay -->
+                            </div>
+                            <div class="author">
+                                <img
+                                    src="image/3.jpg"
+                                    alt="author"
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <div class="text">
+                                <a href="blog-post.html">
+                                    <h4>
+                                        Projects aim to help those experiencing
+                                        mental
+                                    </h4>
+                                </a>
+                                <ul class="post-meta list-inline">
+                                    <li class="list-inline-item">
+                                        <i class="far fa-clock"></i> 14 August
+                                        2017
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <i class="far fa-comment-alt"></i> 540
+                                    </li>
+                                </ul>
+                                <p>
+                                    Sed ut perspiciatis unde omnis iste natus
+                                    error sit voluptatem accusantium doloremque
+                                    laudantium.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!---------- end col1 ----------------------------------------------------->
+                    <div class="col-lg-4">
+                        <div class="blog-post">
+                            <div class="image">
+                                <img
+                                    src="image/2-b.jpg"
+                                    alt="Projects aim to help those experiencing mental"
+                                />
+                                <div
+                                    class="boverlay d-flex align-items-center justify-content-center"
+                                >
+                                    <a href="blog-post.html" class="btn sec-btn"
+                                        >Read more</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="author">
+                                <img
+                                    src="image/4.jpg"
+                                    alt="author"
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <div class="text">
+                                <a href="blog-post.html">
+                                    <h4>
+                                        Projects aim to help those experiencing
+                                        mental
+                                    </h4>
+                                </a>
+                                <ul class="post-meta list-inline">
+                                    <li class="list-inline-item">
+                                        <i class="far fa-clock"></i> 18 August
+                                        2018
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <i class="far fa-comment-alt"></i> 540
+                                    </li>
+                                </ul>
+                                <p>
+                                    Sed ut perspiciatis unde omnis iste natus
+                                    error sit voluptatem accusantium doloremque
+                                    laudantium.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!---------- end col2 ----------------------------------------------------->
+                    <div class="col-lg-4">
+                        <div class="blog-post">
+                            <div class="image">
+                                <img
+                                    src="image/3-b.jpg"
+                                    alt="grow up business"
+                                />
+                                <div
+                                    class="boverlay d-flex align-items-center justify-content-center"
+                                >
+                                    <a href="blog-post.html" class="btn sec-btn"
+                                        >Read more</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="author">
+                                <img
+                                    src="image/2.jpg"
+                                    alt="author"
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <div class="text">
+                                <a href="blog-post.html">
+                                    <h4>
+                                        Projects aim to help those experiencing
+                                        mental
+                                    </h4>
+                                </a>
+                                <ul class="post-meta list-inline">
+                                    <li class="list-inline-item">
+                                        <i class="far fa-clock"></i> 14 August
+                                        2017
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <i class="far fa-comment-alt"></i> 540
+                                    </li>
+                                </ul>
+                                <p>
+                                    Sed ut perspiciatis unde omnis iste natus
+                                    error sit voluptatem accusantium doloremque
+                                    laudantium.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!---------- end col3 ----------------------------------------------------->
+                </div>
+            </div>
+        </section>
+        <!-- end our latest blog -->
+
+        <!--- jumbotron -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="xtop"></div>
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <h2 class="sec-title">Begin a succesful business</h2>
+                    <p class="col-lg-12">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi
+                    </p>
+                </div>
+                <div class="jumbo-links text-center">
+                    <a href="#" class="btn sec-btn">Apply now</a>
+                    <a href="#" class="btn sec-btn btn_light">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <!---  end jumbotron -->
+
+        <!-- contact us -->
+        <section class="contact-us">
+            <div class="container">
+                <!--contact-->
+                <div class="row text-Center">
+                    <h2 class="col-xs-12 sec-title">contact <span>us</span></h2>
+                    <p class="col-xs-12 p">
+                        We aim to reach you anytime & everywhere.. Your
+                        satisfaction is our mission. We invite you to fill in
+                        our form, if you have questions or complaints about
+                        services. We commits to reply within 2 hours For any
+                        inquiries or complaints please contact us
+                    </p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 mb-5">
+                        <div class="card form">
+                            <div>
+                                <div class="text-center card-title">
+                                    <h3>
+                                        <strong>CONTACT</strong>
+                                        <span>US</span>
+                                    </h3>
+                                </div>
+                                <form>
+                                    <div class="input-wrap">
+                                        <input
+                                            type="text"
+                                            id="name"
+                                            placeholder="Your Name"
+                                        />
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                    <div class="input-wrap">
+                                        <input
+                                            type="email"
+                                            id="email"
+                                            placeholder="Your Email"
+                                        />
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                    <div class="input-wrap">
+                                        <textarea
+                                            id="message"
+                                            name="message5"
+                                            rows="2"
+                                            placeholder="Your Message"
+                                        ></textarea>
+                                        <label for="message"
+                                            >Your Message</label
+                                        >
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="checkbox7" />
+                                        <label for="checkbox7"
+                                            >Subscribe to our<a href="#">
+                                                newsletter</a
+                                            ></label
+                                        >
+                                    </div>
+                                    <button type="button" class="btn sec-btn">
+                                        Send a message
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <!-- Google map-->
+                        <div class="card map"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END CONTACT -->
+
+        <!--Address-->
+        <div class="address">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="content text-center">
+                            <i class="fas fa-phone mb-4"></i>
+                            <ul>
+                                <li>
+                                    <a class="link-default" href="tel:#"
+                                        >9-600-1234-678</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="link-default" href="tel:#"
+                                        >9-600-1234-678</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="content text-center">
+                            <i class="fas fa-envelope mb-4"></i>
+                            <p class="text-center">
+                                <a class="link-default" href="mailto:#"
+                                    >hodasalah35@gmail.com</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="content text-center">
+                            <i class="fas fa-map-marker-alt mb-4"></i>
+                            <p>
+                                <a class="link-default" href="#"
+                                    >1456 EGYPT Cairo downtown Street, Egy
+                                    98765-1010 EGY</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end address -->
+        <footer>
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-4 col-md-6 first mb-4">
+                        <h4>About Us</h4>
+                        <p>
+                            Our firm is one of the leading accounting firms in
+                            the area. By combining our expertise, experience and
+                            the energy of our staff, each client receives close
+                            personal and professional attention. Our high
+                            standards, service and specialized staff spell the
+                            difference between our outstanding performance and
+                            other firms.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 second mb-4">
+                        <h4>Recent Blog Posts</h4>
+                        <!-- Post Inline-->
+                        <div>
+                            <p>
+                                <a href="#"
+                                    >Top Tips from Accountants: How To Handle
+                                    IRS Scams</a
+                                >
+                            </p>
+                            <ul>
+                                <li>by Theresa Barnes</li>
+                                <li>
+                                    <a href="#">2 days ago</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Post Inline-->
+                        <div>
+                            <p>
+                                <a href="#"
+                                    >Blogging for Financial Advisors: Build a
+                                    Trusted Relationship Through Your Blog</a
+                                >
+                            </p>
+                            <ul>
+                                <li>by Theresa Barnes</li>
+                                <li>
+                                    <a href="#">2 days ago</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 gallary">
+                        <h4>Gallery</h4>
+
+                        <div class="row">
+                            <div class="col-3 col-sm-4 col-md-3 image">
+                                <img
+                                    class="img-fluid"
+                                    src="image/G1.jpg"
+                                    alt=""
+                                    width="150px"
+                                    height="150px"
+                                />
+                                <div class="f-overlay">
+                                    <h3 class="text-center">+</h3>
+                                </div>
+                            </div>
+                            <div class="col-3 col-sm-4 col-md-3 image">
+                                <img
+                                    class="img-fluid"
+                                    src="image/G2.jpg"
+                                    alt=""
+                                    width="150px"
+                                    height="150px"
+                                />
+                                <div class="f-overlay">
+                                    <h3 class="text-center">+</h3>
+                                </div>
+                            </div>
+                            <div class="col-3 col-sm-4 col-md-3 image">
+                                <img
+                                    class="img-fluid"
+                                    src="image/G3.jpg"
+                                    alt=""
+                                    width="150px"
+                                    height="150px"
+                                />
+                                <div class="f-overlay">
+                                    <h3 class="text-center">+</h3>
+                                </div>
+                            </div>
+                            <div class="col-3 col-sm-4 col-md-3 image">
+                                <img
+                                    class="img-fluid"
+                                    src="image/G4.jpg"
+                                    alt=""
+                                    width="150px"
+                                    height="150px"
+                                />
+                                <div class="f-overlay">
+                                    <h3 class="text-center">+</h3>
+                                </div>
+                            </div>
+                            <div class="col-3 col-sm-4 col-md-3 image">
+                                <img
+                                    class="img-fluid"
+                                    src="image/G5.jpg"
+                                    alt=""
+                                    width="150px"
+                                    height="150px"
+                                />
+                                <div class="f-overlay">
+                                    <h3 class="text-center">+</h3>
+                                </div>
+                            </div>
+                            <div class="col-3 col-sm-4 col-md-3 image">
+                                <img
+                                    class="img-fluid"
+                                    src="image/G6.jpg"
+                                    alt=""
+                                    width="150px"
+                                    height="150px"
+                                />
+                                <div class="f-overlay">
+                                    <h3 class="text-center">+</h3>
+                                </div>
+                            </div>
+                            <div class="col-3 col-sm-4 col-md-3 image">
+                                <img
+                                    class="img-fluid"
+                                    src="image/G7.jpg"
+                                    alt=""
+                                    width="150px"
+                                    height="150px"
+                                />
+                                <div class="f-overlay">
+                                    <h3 class="text-center">+</h3>
+                                </div>
+                            </div>
+                            <div class="col-3 col-sm-4 col-md-3 image">
+                                <img
+                                    class="img-fluid"
+                                    src="image/G8.jpg"
+                                    alt=""
+                                    width="150px"
+                                    height="150px"
+                                />
+                                <div class="f-overlay">
+                                    <h3 class="text-center">+</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 fot-nav">
+                        <ul class="list-nav d-flex pl-0">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <ul class="social d-flex pl-0">
+                            <li>
+                                <a href="#"
+                                    ><i class="fab fa-facebook-f"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><i class="fab fa-google-plus-g"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><i class="fab fa-linkedin-in"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+                <div class="row footer-bottom">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="logo-wrapper">
+                            <a class="navbar-brand" href="#"
+                                ><h6 class="my-0"><span>B</span>usiness</h6></a
+                            >
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <p>
+                            © 2018 All Rights Reserved. Terms of Use and Privacy
+                            Policy
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- scroll to top -->
+        <a id="button_scroll" class="scroll-btn" onclick="topFunction()"
+            ><i class="fas fa-angle-double-up"></i
+        ></a>
+        <!-- scripts -->
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/swiper.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

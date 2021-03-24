@@ -1,0 +1,23 @@
+.navbar-brand {
+    font-family: "work-sans", sans-serif;
+    text-transform: capitalize;
+    font-style: italic;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    display: block;
+    color: #eee;
+    &:hover {
+        color: #1ff1f5;
+    }
+}
+.navbar-brand span {
+    color: #1ff1f5;
+    font-weight: bold;
+    border-bottom: 2px solid #1ff1f5;
+    display: inline-block;
+    font-size: 3.5rem;
+    font-family: "great Vibes", cursive;
+}
+.navbar-brand h6 {
+    font-size: 1.8rem;
+}
