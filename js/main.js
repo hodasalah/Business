@@ -9,7 +9,7 @@ let swiper = new Swiper(".swiper-container", {
 });
 /* ===  Loader   === */
 function myFunction() {
-    setTimeout(showPage, 5000);
+    setTimeout(showPage, 3000);
 }
 
 function showPage() {
